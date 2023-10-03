@@ -1,6 +1,6 @@
 # Digital_Informe_2
 
-# Lab 02 - s
+# Lab 02 - Sumador-restador
 
 Profesor Magistral: Diego Alexander Tibaduiza Burgos - Grupo: 3
 
