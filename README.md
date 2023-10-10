@@ -29,6 +29,14 @@ Estudiante: _**JUAN PABLO LOPEZ MARTINEZ**_
 
 Todas estas operaciones se realizan mediante un circuito lógico denominado medio sumador. El medio sumador admite dos dígitos binarios en sus entradas y genera dos dígitos binarios en  sus  salidas:  un  bit  de  suma  y  un  bit  de acarreo.  Los  semi-sumadores  se  representan mediante el siguiente símbolo lógico: 
 
+![ejemplo1](figs/semi.png)
+
+La lógica del semi-sumador consiste en que, a partir de las expresiones correspondientes a la suma y al acarreo de salida se pueden obtener como funciones de las entradas. Se  anexa  la  tabla  de  verdad  para  ver  el funcionamiento de la lógica del semi-sumador.
+
+![ejemplo1](figs/semi2.png)
+
+
+
 
   
 * Sumador completo:
