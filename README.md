@@ -46,7 +46,7 @@ acepta  un  acarreo  de  entrada.  El  símbolo lógico de un sumador completo e
 
 ![ejemplo1](figs/sum.png)
 
-La  lógica del  sumador  completo  consiste  en sumar  dos  bits  de  entrada  y  un  acarreo  de entrada.  Del  semi-sumador  sabemos  que  la suma  de  los  bits  de  entrada  A  y  B  es  la operación OR-exclusiva de esas dos variables, A ⊕ B. Para sumar el acarreo de entrada (𝐶𝑖𝑛) a los bits de entrada, hay que aplicar de nuevo la  operación  OR-exclusiva,  obteniéndose  la siguiente ecuación para la salida de suma del sumador completo: 
+La  lógica del  sumador  completo  consiste  en sumar  dos  bits  de  entrada  y  un  acarreo  de entrada.  Del  semi-sumador  sabemos  que  la suma  de  los  bits  de  entrada  A  y  B  es  la operación OR-exclusiva de esas dos variables, A ⊕ B. Para sumar el acarreo de entrada (𝐶𝑖𝑛) a los bits de entrada, hay que aplicar de nuevo la  operación  OR-exclusiva,  obteniéndose  la siguiente ecuación para la salida de suma del sumador completo [3]: 
 
 𝛴  =   (𝐴  ⊕  𝐵)  ⊕  𝐶𝑖𝑛 
 
@@ -54,10 +54,8 @@ Para  implementar  la  función  del  sumador completo  se  pueden  utilizar  do
 
 ![ejemplo1](figs/aum3.png)
 
-
-
 * Medio restador: Como su nombre indica, un binario Subtractor es un circuito de toma de decisiones que resta de dos números binarios de la otra, por ejemplo, X – Y para encontrar la diferencia resultante entre los dos números. El algoritmo de la resta en binario es el mismo que en el sistema decimal. Pero conviene repasar la operación de restar en decimal para comprender la operación binaria, que es más sencilla. Los términos que intervienen en la resta se llaman minuendo, sustraendo y diferencia.
-Las restas básicas 0-0, 1-0 y 1-1 son evidentes:
+Las restas básicas 0-0, 1-0 y 1-1 son evidentes [4].:
 
 · 0 – 0 = 0
 
@@ -67,7 +65,13 @@ Las restas básicas 0-0, 1-0 y 1-1 son evidentes:
 
 · 0 – 1 = no cabe o se pide prestado al próximo.
 
-* Restador completo: De igual manera, como para el proceso del sumador completo, si queremos restar para mas de 1 bit
+![ejemplo1](figs/res.png)
+
+
+* Restador completo: De igual manera, como para el proceso del sumador completo, si queremos restar para mas de 1 bit.
+
+![ejemplo1](figs/resc.png)
+
     
   
 ## 2. Desarrollo de la practica
@@ -77,5 +81,7 @@ Sumador/Restador
 ## 2. Bibliografia
 * [1]. Tomado de https://bookdown.org/alberto_brunete/intro_automatica/combinacionales.html
 * [2]. Tomado de https://www.logicbus.com.mx/compuertas-logicas.php
+* [3]. Tomado de https://www.studocu.com/es-mx/document/instituto-tecnologico-de-leon/electronica-digital/sumadores-y-restadores-digitales/3052105
+* [4]. Tomado de https://compilandoconocimiento.com/2017/06/13/sumador-y-restador/
 
 
