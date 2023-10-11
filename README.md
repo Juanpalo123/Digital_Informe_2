@@ -35,11 +35,26 @@ La lógica del semi-sumador consiste en que, a partir de las expresiones corresp
 
 ![ejemplo1](figs/semi2.png)
 
+Se  puede  observar  que  la  salida  de  acarreo (𝐶𝑜𝑢𝑡) es 1 sólo cuando A y B son 1; por tanto, 𝐶𝑜𝑢𝑡  puede  expresarse  como una  operación AND de las variables de entrada. 𝐶𝑜𝑢𝑡 =𝐴𝐵 También  se  puede  ver  que  la  salida correspondiente a la suma (Σ) es 1 sólo si las variables  A  y  B  son  distintas.  Por  tanto,  la suma  puede  expresarse  como  una  operación OR-exclusiva de las variables de entrada. 
+
+Σ = 𝐴 ⊕ 𝐵
+
+![ejemplo1](figs/semi3.png)
+
+* Sumador completo: Un sumador acepta  dos bits de entrada y  un acarreo  de  entrada,  y  genera  una  salida  de suma  y  un  acarreo  de  salida.  La  diferencia principal  entre  un  sumador  completo  y  un semi-sumador  es  que  el  sumador  completo 
+acepta  un  acarreo  de  entrada.  El  símbolo lógico de un sumador completo es el siguiente:
+
+![ejemplo1](figs/sum.png)
+
+La  lógica del  sumador  completo  consiste  en sumar  dos  bits  de  entrada  y  un  acarreo  de entrada.  Del  semi-sumador  sabemos  que  la suma  de  los  bits  de  entrada  A  y  B  es  la operación OR-exclusiva de esas dos variables, A ⊕ B. Para sumar el acarreo de entrada (𝐶𝑖𝑛) a los bits de entrada, hay que aplicar de nuevo la  operación  OR-exclusiva,  obteniéndose  la siguiente ecuación para la salida de suma del sumador completo: 
+
+𝛴  =   (𝐴  ⊕  𝐵)  ⊕  𝐶𝑖𝑛 
+
+Para  implementar  la  función  del  sumador completo  se  pueden  utilizar  dos  compuertas XOR  de  2  entradas.  La  primera  tiene  que generar el término A ⊕ B, y la segunda tiene como  entradas la salida  de la  primera puerta XOR y el acarreo de entrada. Esto se ilustra con la imagen siguiente: 
+
+![ejemplo1](figs/aum3.png)
 
 
-
-  
-* Sumador completo:
 
 * Medio restador: Como su nombre indica, un binario Subtractor es un circuito de toma de decisiones que resta de dos números binarios de la otra, por ejemplo, X – Y para encontrar la diferencia resultante entre los dos números. El algoritmo de la resta en binario es el mismo que en el sistema decimal. Pero conviene repasar la operación de restar en decimal para comprender la operación binaria, que es más sencilla. Los términos que intervienen en la resta se llaman minuendo, sustraendo y diferencia.
 Las restas básicas 0-0, 1-0 y 1-1 son evidentes:
