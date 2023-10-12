@@ -72,11 +72,31 @@ Las restas básicas 0-0, 1-0 y 1-1 son evidentes [4].:
 
 ![ejemplo1](figs/resc.png)
 
-    
-  
 ## 2. Desarrollo de la practica
 
-Sumador/Restador
+Dado que se tuvieron algunos problemas con la parte de simulacion en Digital, se hizo el siguiente esquematico en el software de Proteus y se simulo. 
+
+A continuación se muestra el circuito de un sumador restador de dos números de 4 bits, que hará la suma o resta de dos números (A y B ), y que mostrará el resultado en 6 leds, 5 led rojos que representaran la magnitud, y un led verde que representara el signo. Cuando el led verde este en "1" (prendido), indicará que el resultado es negativo, y cuando el led verde este en "0" (apagado), indicara que el resultado es positivo. Como entradas se tendrán los dos números A y B, y un interruptor que indicara la operación, cuando el interruptor este en "0" (abierto) la operación es suma, y cuando el interruptor este en "1" (cerrado), la operación es resta. Se hará uso principalmente de compuertas XOR y del sumador completo 74LS83. En este sumador restador se puede presentar 3 situaciones:
+1. Se realiza la operación A+B. El máximo resultado será 30 y el mínimo resultado será 0. El resultado es positivo.
+2. Se realiza la operación A-B, en donde A es mayor o igual que B. El resultado máximo es 15 y el resultado mínimo es 0.El resultado es positivo.
+3. Se realiza la operación A-B, en donde A es menor que B. El resultado máximo es -1 y el resultado mínimo es -15. El resultado es negativo.
+
+Componentes:
+- 2 74LS83 (sumadores de 4 bits)
+- 1 74XX08 (cada integrado tiene 4 compuertas and)
+- 1 74XX04 (cada integrado tiene 6 compuerta not)
+- 2 74XX86 (cada integrado contiene 4 compuertas xor)
+- 9 resistencias de 2.2k ohmios @ 1/4 de vatio
+- 6 resistencias de 10k ohmios @ 1/4 de vatio
+- 5 leds rojos
+- 1 led verde
+- 2 dipswitch de 4 posiciones
+- 1 dipswitch de 1 posición
+- 1 fuente de 5 voltios
+
+![ejemplo1](figs/cir.png)
+
+Segun el anterior circuito. Se muestra la resta A menos B. A tiene el valor de 0 y B tiene el valor de 15. La respuesta es -15.
 
 ## 2. Bibliografia
 * [1]. Tomado de https://bookdown.org/alberto_brunete/intro_automatica/combinacionales.html
