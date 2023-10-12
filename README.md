@@ -41,12 +41,11 @@ Se  puede  observar  que  la  salida  de  acarreo (𝐶𝑜𝑢𝑡) es 1 sólo 
 
 ![ejemplo1](figs/semi3.png)
 
-* Sumador completo: Un sumador acepta  dos bits de entrada y  un acarreo  de  entrada,  y  genera  una  salida  de suma  y  un  acarreo  de  salida.  La  diferencia principal  entre  un  sumador  completo  y  un semi-sumador  es  que  el  sumador  completo 
-acepta  un  acarreo  de  entrada.  El  símbolo lógico de un sumador completo es el siguiente:
+* Sumador completo: Un sumador acepta  dos bits de entrada y  un acarreo  de  entrada,  y  genera  una  salida  de suma  y  un  acarreo  de  salida.  La  diferencia principal  entre  un  sumador  completo  y  un semi-sumador  es  que  el  sumador  completo acepta  un  acarreo  de  entrada.  El  símbolo lógico de un sumador completo es el siguiente:
 
 ![ejemplo1](figs/sum.png)
 
-La  lógica del  sumador  completo  consiste  en sumar  dos  bits  de  entrada  y  un  acarreo  de entrada.  Del  semi-sumador  sabemos  que  la suma  de  los  bits  de  entrada  A  y  B  es  la operación OR-exclusiva de esas dos variables, A ⊕ B. Para sumar el acarreo de entrada (𝐶𝑖𝑛) a los bits de entrada, hay que aplicar de nuevo la  operación  OR-exclusiva,  obteniéndose  la siguiente ecuación para la salida de suma del sumador completo [3]: 
+La  lógica del  sumador  completo  consiste  en sumar  dos  bits  de  entrada  y  un  acarreo  de entrada.  Del  medio sumador sabemos  que  la suma  de  los  bits  de  entrada  A  y  B  es  la operación OR-exclusiva de esas dos variables, A ⊕ B. Para sumar el acarreo de entrada (𝐶𝑖𝑛) a los bits de entrada, hay que aplicar de nuevo la  operación  OR-exclusiva,  obteniéndose  la siguiente ecuación para la salida de suma del sumador completo [3]: 
 
 𝛴  =   (𝐴  ⊕  𝐵)  ⊕  𝐶𝑖𝑛 
 
@@ -76,7 +75,8 @@ Las restas básicas 0-0, 1-0 y 1-1 son evidentes [4].:
 
 Dado que se tuvieron algunos problemas con la parte de simulacion en Digital, se hizo el siguiente esquematico en el software de Proteus y se simulo. 
 
-A continuación se muestra el circuito de un sumador restador de dos números de 4 bits, que hará la suma o resta de dos números (A y B ), y que mostrará el resultado en 6 leds, 5 led rojos que representaran la magnitud, y un led verde que representara el signo. Cuando el led verde este en "1" (prendido), indicará que el resultado es negativo, y cuando el led verde este en "0" (apagado), indicara que el resultado es positivo. Como entradas se tendrán los dos números A y B, y un interruptor que indicara la operación, cuando el interruptor este en "0" (abierto) la operación es suma, y cuando el interruptor este en "1" (cerrado), la operación es resta. Se hará uso principalmente de compuertas XOR y del sumador completo 74LS83. En este sumador restador se puede presentar 3 situaciones:
+Se muestra el circuito de un sumador restador de dos números de 4 bits, que hará la suma o resta de dos números (A y B), y que mostrará el resultado en 6 leds, 5 led rojos que representaran la magnitud, y un led verde que representara el signo. Cuando el led verde este en "1" (prendido), indicará que el resultado es negativo, y cuando el led verde este en "0" (apagado), indicara que el resultado es positivo. Como entradas se tendrán los dos números A y B, y un interruptor que indicara la operación, cuando el interruptor este en "0" (abierto) la operación es suma, y cuando el interruptor este en "1" (cerrado), la operación es resta. Se hará uso principalmente de compuertas XOR y del sumador completo 74LS83. En este sumador restador se puede presentar 3 situaciones:
+
 1. Se realiza la operación A+B. El máximo resultado será 30 y el mínimo resultado será 0. El resultado es positivo.
 2. Se realiza la operación A-B, en donde A es mayor o igual que B. El resultado máximo es 15 y el resultado mínimo es 0.El resultado es positivo.
 3. Se realiza la operación A-B, en donde A es menor que B. El resultado máximo es -1 y el resultado mínimo es -15. El resultado es negativo.
@@ -86,8 +86,8 @@ Componentes:
 - 1 74XX08 (cada integrado tiene 4 compuertas and)
 - 1 74XX04 (cada integrado tiene 6 compuerta not)
 - 2 74XX86 (cada integrado contiene 4 compuertas xor)
-- 9 resistencias de 2.2k ohmios @ 1/4 de vatio
-- 6 resistencias de 10k ohmios @ 1/4 de vatio
+- 9 resistencias de 2.2k ohmios
+- 6 resistencias de 10k ohmios
 - 5 leds rojos
 - 1 led verde
 - 2 dipswitch de 4 posiciones
