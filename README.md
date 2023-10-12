@@ -98,7 +98,7 @@ Componentes:
 
 Segun el anterior circuito. Se muestra la resta A menos B. A tiene el valor de 0 y B tiene el valor de 15. La respuesta es -15.
 
-## 2. Bibliografia
+## 3. Bibliografia
 * [1]. Tomado de https://bookdown.org/alberto_brunete/intro_automatica/combinacionales.html
 * [2]. Tomado de https://www.logicbus.com.mx/compuertas-logicas.php
 * [3]. Tomado de https://www.studocu.com/es-mx/document/instituto-tecnologico-de-leon/electronica-digital/sumadores-y-restadores-digitales/3052105
